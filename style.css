@@ -30,7 +30,7 @@ body {
 
 .form-container {
   width: 100%;
-  max-width: 500px;
+  max-width: 300px;
   background: rgba(255, 255, 255, 0.9);
   padding: 30px;
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
@@ -87,7 +87,7 @@ button:hover {
 
 
 .thank-you-container {
-      max-width: 600px;
+      max-width: 300px;
       margin: 80px auto;
       text-align: center;
       background: #fff;
