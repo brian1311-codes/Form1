@@ -17,11 +17,12 @@ if ($conn->connect_error) {
 $name  = htmlspecialchars($_POST['name']);
 $phone = htmlspecialchars($_POST['phone']);
 $email = htmlspecialchars($_POST['email']);
+$cname = htmlspecialchars($_POST['c-name']);
 
 
-$sql = "INSERT INTO contacts (name, phone, email) VALUES (?, ?, ?)";
+$sql = "INSERT INTO contacts (name, phone, email, cname) VALUES (?, ?, ?, ?)";
 $stmt = $conn->prepare($sql);
-$stmt->bind_param("sss", $name, $phone, $email);
+$stmt->bind_param("ssss", $name, $phone, $email, $cname);
 
 if ($stmt->execute()) {
     header("Location: thankyou.html");

@@ -1,127 +1,364 @@
 body {
-  font-family: 'Ariak', sans-serif;
+  font-family: 'Ariak', Arial, Helvetica, sans-serif;
   background: url('img/img1.jpg') no-repeat center center fixed;
   background-size: cover;
   margin: 0;
-  padding: 0;
-  
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
-
 
 .form-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 40px;
+  margin: 4vh 0;
+  width: 90%;
+  max-width: 400px;
 }
 
-
 .title-image-wrapper {
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
   background-color: #fff;
+  text-align: center;
+  width: 100%;
 }
 
 .title-image {
   max-width: 180px;
+  width: 100%;
   height: auto;
   display: block;
+  margin: 0 auto;
 }
-
 
 .form-container {
   width: 100%;
-  max-width: 300px;
+  max-width: 360px;
   background: rgba(255, 255, 255, 0.9);
-  padding: 30px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  box-sizing: border-box;
 }
-
 
 h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   color: #333;
+  font-size: 1.5rem;
 }
 
 label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
   font-weight: 600;
+  font-size: 0.9rem;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="tel"] {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: 0.75rem;
+  margin-bottom: 1.25rem;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
+  font-size: 1rem;
 }
 
 button {
   width: 100%;
-  padding: 12px;
+  padding: 0.75rem;
   background-color: #012142;
   color: white;
   border: none;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
   transition: background 0.3s ease;
+  touch-action: manipulation;
+  min-height: 48px;
 }
 
 button:hover {
-  background-color: #012142;
+  background-color: #003087;
 }
-
 
 .form-image {
   width: 100%;
+  max-width: 320px;
   border-radius: 8px;
-  margin-top: 10px;
-  float: left;
+  margin: 0.75rem auto 0;
+  display: block;
+}
+
+.export {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.export-button {
+  background-color: #012142;
+  color: white;
+  border: none;
+  padding: 0.9rem 1.5rem; 
+  border-radius: 5px;
+  font-size: 1.2rem; 
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+  touch-action: manipulation;
+  min-height: 52px; 
+}
+
+.export-button:hover {
+  background-color: #0056b3;
+}
+
+.thank-you-container {
+  width: 100%;
+  max-width: 360px;
+  margin: 4vh auto;
+  text-align: center;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.thank-you-container img {
+  width: 100%;
+  max-width: 160px;
+  margin-bottom: 1.25rem;
+}
+
+.thank-you-container h1 {
+  color: #012142;
+  margin-bottom: 0.75rem;
+  font-size: 1.75rem;
+}
+
+.thank-you-container p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.thank-you-container button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.25rem;
+  background-color: #012142;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+  font-size: 1rem;
+  min-height: 48px;
+  border: none;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.thank-you-container button:hover {
+  background-color: #003087;
+}
+
+.admin-container {
+  width: 100%;
+  max-width: 360px;
+  margin: 4vh auto;
+  text-align: center;
+  background: #fff; 
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.admin-container h1 {
+  color: #012142;
+  margin-bottom: 1.25rem;
+  font-size: 2rem; 
 }
 
 
-.thank-you-container {
-      max-width: 300px;
-      margin: 80px auto;
-      text-align: center;
-      background: #fff;
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    }
+@media only screen and (max-width: 430px) {
+  body {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
 
-.thank-you-container img {
-      width: 150px;
-      margin-bottom: 20px;
-    }
+  .form-wrapper {
+    width: 92vw;
+    max-width: 380px;
+    margin: 3vh 0;
+  }
 
-.thank-you-container h1 {
-      color: #012142;
-      margin-bottom: 10px;
-    }
+  .form-container {
+    padding: 1.25rem;
+    max-width: 100%;
+  }
 
-.thank-you-container p {
-      font-size: 18px;
-      color: #555;
-    }
+  .title-image {
+    max-width: 150px;
+  }
 
-.thank-you-container a {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 10px 20px;
-      background-color: #012142;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background 0.3s;
-    }
+  h2 {
+    font-size: 1.4rem;
+  }
 
-.thank-you-container a:hover {
-      background-color: #012142;
-    }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    padding: 0.625rem;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+
+  button {
+    padding: 0.75rem;
+    font-size: 0.95rem;
+  }
+
+  .export-button {
+    padding: 0.75rem 1.25rem; 
+    font-size: 1.1rem; 
+    min-height: 48px;
+  }
+
+  .form-image {
+    max-width: 280px;
+  }
+
+  .thank-you-container {
+    width: 98vw;
+    max-width: 460px;
+    min-height: 450px;
+    margin: 1vh auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    
+  }
+
+  .thank-you-container h1 {
+    font-size: 2.2rem;
+  }
+
+  .thank-you-container p {
+    font-size: 1.3rem;
+  }
+
+  .thank-you-container button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    min-height: 52px;
+  }
+
+  .thank-you-container img {
+    max-width: 180px;
+  }
+
+  .admin-container {
+    width: 92vw;
+    max-width: 380px;
+    margin: 3vh auto;
+    padding: 1.25rem;
+  }
+
+  .admin-container h1 {
+    font-size: 1.8rem; 
+}
+
+
+@media only screen and (max-width: 360px) {
+  .form-wrapper {
+    width: 95vw;
+    max-width: 340px;
+  }
+
+  .form-container {
+    padding: 1rem;
+  }
+
+  .title-image {
+    max-width: 130px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 0.625rem;
+    font-size: 0.9rem;
+  }
+
+  .export-button {
+    padding: 0.625rem 1rem; 
+    font-size: 1rem; 
+    min-height: 48px;
+    
+  }
+
+  .form-image {
+    max-width: 260px;
+  }
+
+  .thank-you-container {
+    width: 98vw;
+    max-width: 420px;
+    min-height: 400px;
+    margin: 1vh auto;
+    padding: 1.75rem;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    
+  }
+
+  .thank-you-container h1 {
+    font-size: 2rem;
+  }
+
+  .thank-you-container p {
+    font-size: 1.2rem;
+  }
+
+  .thank-you-container button {
+    padding: 0.9rem 1.75rem;
+    font-size: 1.15rem;
+    min-height: 50px;
+  }
+
+  .thank-you-container img {
+    max-width: 160px;
+  }
+
+  .admin-container {
+    width: 95vw;
+    max-width: 340px;
+    padding: 1rem;
+  }
+
+  .admin-container h1 {
+    font-size: 1.7rem; 
+  }
+}
+}
+
+input:focus, button:focus {
+  outline: 2px solid #012142;
+  outline-offset: 2px;
+}

@@ -2,17 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thank You</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <div class="thank-you-container">
-    <img src="img/thankyou.jpg" alt="Thank You">
+    <!-- <img src="img/thankyou.jpg" alt="Thank You"> -->
     <h1>Thank You!</h1>
     <p>Your information has been successfully submitted.</p>
-    <a href="index.html">Submit Another Response</a>
+    <button type="button" id="submit-another" aria-label="Submit another response">Submit Another Response</button>
   </div>
 
+  <script>
+    document.getElementById('submit-another').addEventListener('click', () => {
+      window.location.href = 'index.html';
+    });
+
+    setTimeout(function() {
+      window.location.href = "http://localhost/Form1/index.html";
+    }, 3000);
+  </script>
 </body>
 </html>

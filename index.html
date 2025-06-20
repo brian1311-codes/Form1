@@ -2,38 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Form</title>
   <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
 </head>
 <body>
-
   <div class="form-wrapper">
-
     <div class="title-image-wrapper">
-      <img src="img/DXO.png" alt="Form Title" class="title-image">
+      <!-- <img src="img/DXO.jpg" alt="Logo" class="title-image"> -->
     </div>
-
     <div class="form-container">
-      <h2>Enter Your Details here</h2>
-      <form id="contactForm" action="submit.php" method="POST">
+      <h2>Enter Your Details</h2>
+      <form action="submit.php" method="POST">
         <label for="name">Name</label>
-        <input type="text" name="name" id="name" required>
+        <input type="text" id="name" name="name" required>
 
         <label for="phone">Phone Number</label>
-        <input type="tel" name="phone" id="phone" required>
+        <input type="tel" id="phone" name="phone" required>
 
         <label for="email">Email Address</label>
-        <input type="email" name="email" id="email" required>
+        <input type="email" id="email" name="email" required>
 
         <label for="c-name">Company Name</label>
-        <input type="text" name="c-name" id="c-name" required>
+        <input type="text" id="c-name" name="c-name" required>
 
         <button type="submit">Submit</button>
       </form>
     </div>
-
   </div>
-
+  
 </body>
 </html>
