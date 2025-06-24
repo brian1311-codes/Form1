@@ -1,7 +1,7 @@
 body {
   font-family: 'Ariak', Arial, Helvetica, sans-serif;
-  background: url('img/img1.jpg') no-repeat center center fixed;
-  background-size: cover;
+  background: url('img/matrix.gif') no-repeat center center fixed;
+  background-size: 650px;
   margin: 0;
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   min-height: 100vh;
@@ -21,33 +21,39 @@ body {
 }
 
 .title-image-wrapper {
-  margin-bottom: 1.5rem;
-  background-color: #fff;
+  /* margin-top: -100px; */
+  margin-bottom: -2.5rem;
+  /* background-color: #fff; */
   text-align: center;
   width: 100%;
+  
 }
 
 .title-image {
-  max-width: 180px;
+  max-width: 460px;
   width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
+  /* border-radius: 0 80 0 80; */
+  padding-bottom: 50px;
+  /* padding-top: 50px; */
 }
 
 .form-container {
   width: 100%;
   max-width: 360px;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(38, 33, 33, 0.9);
   padding: 0 1.25rem 1rem 1.25rem;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   box-sizing: border-box;
+  /* margin-top: -50px; */
 }
 
 .main-head{
   text-align: center;
-  color: #333;
+  color: #ffffff;
   font-size: larger;
   margin-bottom: -20px;
 }
@@ -55,7 +61,7 @@ body {
 .sub-head{
   text-align: center;
   padding: 0 0 0 0;
-  color: #333;
+  color: #ffffff;
   font-size: large;
 }
 
@@ -63,7 +69,7 @@ h2 {
   margin-top: 1.25rem;
   text-align: center;
   margin-bottom: 1.25rem;
-  color: #333;
+  color: #ffffff;
   font-size: 1.5rem;
 }
 
@@ -72,6 +78,7 @@ label {
   margin-bottom: 0.5rem;
   font-weight: 600;
   font-size: 0.9rem;
+  color: #ffffff;
 }
 
 input[type="text"],
@@ -89,7 +96,7 @@ input[type="tel"] {
 button {
   width: 100%;
   padding: 0.75rem;
-  background-color: #012142;
+  background-color: #115d01;
   color: white;
   border: none;
   border-radius: 5px;
@@ -101,7 +108,7 @@ button {
 }
 
 button:hover {
-  background-color: #003087;
+  background-color: #32e417;
 }
 
 .form-image {
@@ -118,7 +125,7 @@ button:hover {
 }
 
 .export-button {
-  background-color: #012142;
+  background-color: #115d01;
   color: white;
   border: none;
   padding: 0.9rem 1.5rem; 
@@ -132,7 +139,7 @@ button:hover {
 }
 
 .export-button:hover {
-  background-color: #003087;
+  background-color: #32e417;
 }
 
 .thank-you-container {
@@ -140,7 +147,8 @@ button:hover {
   max-width: 360px;
   margin: 4vh auto;
   text-align: center;
-  background: #fff;
+  background: rgba(38, 33, 33, 0.9);
+  color: #fff;
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -154,21 +162,21 @@ button:hover {
 }
 
 .thank-you-container h1 {
-  color: #012142;
+  color: #ffffff;
   margin-bottom: 0.75rem;
   font-size: 1.75rem;
 }
 
 .thank-you-container p {
   font-size: 1.1rem;
-  color: #555;
+  color: #ffffff;
 }
 
 .thank-you-container button {
   display: inline-block;
   margin-top: 1.5rem;
   padding: 0.75rem 1.25rem;
-  background-color: #012142;
+  background-color: #115d01;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -181,7 +189,7 @@ button:hover {
 }
 
 .thank-you-container button:hover {
-  background-color: #003087;
+  background-color: #32e417;
 }
 
 .admin-container {
@@ -189,7 +197,7 @@ button:hover {
   max-width: 360px;
   margin: 4vh auto;
   text-align: center;
-  background: #fff; 
+  background: #222222; 
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -197,7 +205,7 @@ button:hover {
 }
 
 .admin-container h1 {
-  color: #012142;
+  color: #ffffff;
   margin-bottom: 1.25rem;
   font-size: 2rem; 
 }
@@ -220,7 +228,7 @@ button:hover {
   }
 
   .title-image {
-    max-width: 150px;
+    max-width: 250px;
   }
 
   h2 {
@@ -256,7 +264,7 @@ button:hover {
     min-height: 450px;
     margin: 1vh auto;
     padding: 2rem;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(38, 33, 33, 0.9);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     
   }
@@ -302,7 +310,7 @@ button:hover {
   }
 
   .title-image {
-    max-width: 130px;
+    max-width: 200px;
   }
 
   h2 {
@@ -338,7 +346,7 @@ button:hover {
     min-height: 400px;
     margin: 1vh auto;
     padding: 1.75rem;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(38, 33, 33, 0.9);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     
   }
